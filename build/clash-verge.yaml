@@ -10,6 +10,17 @@ log-level: info
 ipv6: false
 secret: ''
 external-controller: 127.0.0.1:9097
+tun:
+  stack: gVisor
+  device: Meta
+  auto-route: true
+  strict-route: true
+  auto-detect-interface: true
+  dns-hijack:
+  - any:53
+  - tcp://any:53
+  mtu: 9000
+  enable: true
 dns:
   enabled: true
   nameserver:
@@ -23,20 +34,9 @@ dns:
   enable: true
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
-tun:
-  stack: gVisor
-  device: Meta
-  auto-route: true
-  strict-route: true
-  auto-detect-interface: true
-  dns-hijack:
-  - any:53
-  - tcp://any:53
-  mtu: 9000
-  enable: true
 proxies:
 - name: 🇭🇰 香港Z01
-  server: m206e-g04.hk01-ae5.entry.v50307shvkaa.art
+  server: yo07o-g04.hk01-ae5.entry.v50307shvkaa.art
   port: 19274
   client-fingerprint: chrome
   type: ss
@@ -45,7 +45,7 @@ proxies:
   tfo: false
   udp: true
 - name: 🇯🇵 日本Z01 | x0.8
-  server: f2d3d-g04.jp01-ae5.entry.v50307shvkaa.art
+  server: 7k8bl-g04.jp01-ae5.entry.v50307shvkaa.art
   port: 475
   client-fingerprint: chrome
   type: ss
@@ -54,7 +54,7 @@ proxies:
   tfo: false
   udp: true
 - name: 🇭🇰 香港Z02 | IEPL
-  server: yxheh-g04.hk02-ae5.entry.v50307shvkaa.art
+  server: tu2wj-g04.hk02-ae5.entry.v50307shvkaa.art
   port: 14562
   client-fingerprint: chrome
   type: ss
@@ -63,7 +63,7 @@ proxies:
   tfo: false
   udp: true
 - name: 🇯🇵 日本Z02 | x0.8
-  server: unvrd-g04.jp02-ae5.entry.v50307shvkaa.art
+  server: r3kbs-g04.jp02-ae5.entry.v50307shvkaa.art
   port: 485
   client-fingerprint: chrome
   type: ss
@@ -72,7 +72,7 @@ proxies:
   tfo: false
   udp: true
 - name: 🇭🇰 香港Z03 | IEPL
-  server: ekky6-g04.hk03-ae5.entry.v50307shvkaa.art
+  server: ev5f5-g04.hk03-ae5.entry.v50307shvkaa.art
   port: 762
   client-fingerprint: chrome
   type: ss
@@ -81,7 +81,7 @@ proxies:
   tfo: false
   udp: true
 - name: 🇯🇵 日本Z03 | x0.8
-  server: a3q5p-g04.jp03-ae5.entry.v50307shvkaa.art
+  server: kx216-g04.jp03-ae5.entry.v50307shvkaa.art
   port: 490
   client-fingerprint: chrome
   type: ss
@@ -90,7 +90,7 @@ proxies:
   tfo: false
   udp: true
 - name: 🇭🇰 香港Z04 | IEPL
-  server: l1loc-g04.hk04-ae5.entry.v50307shvkaa.art
+  server: i9dlk-g04.hk04-ae5.entry.v50307shvkaa.art
   port: 806
   client-fingerprint: chrome
   type: ss
@@ -99,7 +99,7 @@ proxies:
   tfo: false
   udp: true
 - name: 🇯🇵 日本Z04 | x0.8
-  server: 76ko0-g04.jp04-ae5.entry.v50307shvkaa.art
+  server: 65cv6-g04.jp04-ae5.entry.v50307shvkaa.art
   port: 495
   client-fingerprint: chrome
   type: ss
@@ -108,7 +108,7 @@ proxies:
   tfo: false
   udp: true
 - name: 🇭🇰 香港Z05 | IEPL
-  server: 0c3xu-g04.hk05-ae5.entry.v50307shvkaa.art
+  server: yhltg-g04.hk05-ae5.entry.v50307shvkaa.art
   port: 1814
   client-fingerprint: chrome
   type: ss
@@ -117,7 +117,7 @@ proxies:
   tfo: false
   udp: true
 - name: 🇯🇵 日本Z05 | 下载专用 | x0.01
-  server: y0890-g04.jp05-vm5.entry.rtysjur.quest
+  server: m2mok-g04.jp05-vm5.entry.rtysjur.quest
   port: 64657
   client-fingerprint: chrome
   type: vmess
@@ -129,7 +129,7 @@ proxies:
   skip-cert-verify: false
   udp: true
 - name: 🇭🇰 香港Z06 | x0.8
-  server: xxbr0-g04.hk06-ae5.entry.v50307shvkaa.art
+  server: 8daky-g04.hk06-ae5.entry.v50307shvkaa.art
   port: 1415
   client-fingerprint: chrome
   type: ss
@@ -138,7 +138,7 @@ proxies:
   tfo: false
   udp: true
 - name: 🇯🇵 日本Z06 | 下载专用 | x0.01
-  server: qw3wb-g04.jp06-vm5.entry.rtysjur.quest
+  server: h07m6-g04.jp06-vm5.entry.rtysjur.quest
   port: 665
   client-fingerprint: chrome
   type: vmess
@@ -150,7 +150,7 @@ proxies:
   skip-cert-verify: false
   udp: true
 - name: 🇭🇰 香港Z07 | x0.8
-  server: 2gzbz-g04.hk07-ae5.entry.v50307shvkaa.art
+  server: iu9h7-g04.hk07-ae5.entry.v50307shvkaa.art
   port: 1422
   client-fingerprint: chrome
   type: ss
@@ -159,7 +159,7 @@ proxies:
   tfo: false
   udp: true
 - name: 🇯🇵 日本Z07 | x0.8
-  server: ofrul-g04.jp07-ae5.entry.v50307shvkaa.art
+  server: vucf5-g04.jp07-ae5.entry.v50307shvkaa.art
   port: 14007
   client-fingerprint: chrome
   type: ss
@@ -168,7 +168,7 @@ proxies:
   tfo: false
   udp: true
 - name: 🇭🇰 香港Z08 | x0.8
-  server: 5nqt2-g04.hk08-ae5.entry.v50307shvkaa.art
+  server: 3iq9c-g04.hk08-ae5.entry.v50307shvkaa.art
   port: 18645
   client-fingerprint: chrome
   type: ss
@@ -177,7 +177,7 @@ proxies:
   tfo: false
   udp: true
 - name: 🇯🇵 日本Z08 | x0.8
-  server: ux6q4-g04.jp08-ae5.entry.v50307shvkaa.art
+  server: gq00e-g04.jp08-ae5.entry.v50307shvkaa.art
   port: 12545
   client-fingerprint: chrome
   type: ss
@@ -186,7 +186,7 @@ proxies:
   tfo: false
   udp: true
 - name: 🇭🇰 香港Z09 | IEPL
-  server: xswaz-g04.hk09-vm5.entry.v50307shvkaa.art
+  server: 92y00-g04.hk09-vm5.entry.v50307shvkaa.art
   port: 15267
   client-fingerprint: chrome
   type: vmess
@@ -198,7 +198,7 @@ proxies:
   skip-cert-verify: false
   udp: true
 - name: 🇯🇵 日本Z09 | x0.8
-  server: twkfk-g04.jp09-ae5.entry.v50307shvkaa.art
+  server: jwahy-g04.jp09-ae5.entry.v50307shvkaa.art
   port: 11160
   client-fingerprint: chrome
   type: ss
@@ -207,7 +207,7 @@ proxies:
   tfo: false
   udp: true
 - name: 🇭🇰 香港Z10 | IEPL
-  server: ra1j9-g04.hk10-vm5.entry.v50307shvkaa.art
+  server: ggwpr-g04.hk10-vm5.entry.v50307shvkaa.art
   port: 13485
   client-fingerprint: chrome
   type: vmess
@@ -224,7 +224,7 @@ proxies:
       Host: bgp-01-10.entry-0.chinasnow.net
   udp: true
 - name: 🇯🇵 日本Z10 | x0.8
-  server: iwdqo-g04.jp10-ae5.entry.v50307shvkaa.art
+  server: g7d1y-g04.jp10-ae5.entry.v50307shvkaa.art
   port: 16526
   client-fingerprint: chrome
   type: ss
@@ -233,7 +233,7 @@ proxies:
   tfo: false
   udp: true
 - name: 🇭🇰 香港Z11 | IEPL
-  server: bjm6w-g04.hk11-vm5.entry.v50307shvkaa.art
+  server: zgc59-g04.hk11-vm5.entry.v50307shvkaa.art
   port: 577
   client-fingerprint: chrome
   type: vmess
@@ -250,7 +250,7 @@ proxies:
       Host: bgp-01-11.entry-0.chinasnow.net
   udp: true
 - name: 🇯🇵 日本Z11 | x0.8
-  server: 5h1nq-g04.jp11-ae5.entry.v50307shvkaa.art
+  server: r8igs-g04.jp11-ae5.entry.v50307shvkaa.art
   port: 17743
   client-fingerprint: chrome
   type: ss
@@ -259,7 +259,7 @@ proxies:
   tfo: false
   udp: true
 - name: 🇯🇵 日本Z12 | IEPL | 测试
-  server: nioql-g04.jp12-ae5.entry.v50307shvkaa.art
+  server: ef23i-g04.jp12-ae5.entry.v50307shvkaa.art
   port: 500
   client-fingerprint: chrome
   type: ss
@@ -268,7 +268,7 @@ proxies:
   tfo: false
   udp: true
 - name: 🇸🇬 新加坡Z01
-  server: tegq9-g04.sg01-ae5.entry.v50307shvkaa.art
+  server: qtbga-g04.sg01-ae5.entry.v50307shvkaa.art
   port: 20002
   client-fingerprint: chrome
   type: ss
@@ -277,7 +277,7 @@ proxies:
   tfo: false
   udp: true
 - name: 🇸🇬 新加坡Z02
-  server: tqnvu-g04.sg02-ae5.entry.v50307shvkaa.art
+  server: 2n6g1-g04.sg02-ae5.entry.v50307shvkaa.art
   port: 20077
   client-fingerprint: chrome
   type: ss
@@ -286,7 +286,7 @@ proxies:
   tfo: false
   udp: true
 - name: 🇹🇼 台湾Z01 | IEPL | x2
-  server: 841jc-g04.tw01-ae5.entry.v50307shvkaa.art
+  server: ayp2q-g04.tw01-ae5.entry.v50307shvkaa.art
   port: 20007
   client-fingerprint: chrome
   type: ss
@@ -295,7 +295,7 @@ proxies:
   tfo: false
   udp: true
 - name: 🇺🇸 美国Z01
-  server: toen4-g04.us01-ae5.entry.v50307shvkaa.art
+  server: ut1sl-g04.us01-ae5.entry.v50307shvkaa.art
   port: 20012
   client-fingerprint: chrome
   type: ss
@@ -304,7 +304,7 @@ proxies:
   tfo: false
   udp: true
 - name: 🇺🇸 美国Z02
-  server: cwfn2-g04.us02-ae5.entry.v50307shvkaa.art
+  server: sxkf0-g04.us02-ae5.entry.v50307shvkaa.art
   port: 20017
   client-fingerprint: chrome
   type: ss
@@ -313,7 +313,7 @@ proxies:
   tfo: false
   udp: true
 - name: 🇬🇧 英国Z01
-  server: s60zq-g04.gb01-ae5.entry.v50307shvkaa.art
+  server: dct3m-g04.gb01-ae5.entry.v50307shvkaa.art
   port: 20022
   client-fingerprint: chrome
   type: ss
@@ -322,7 +322,7 @@ proxies:
   tfo: false
   udp: true
 - name: 🇦🇷 阿根廷Z01
-  server: tds9e-g04.ar01-ae5.entry.v50307shvkaa.art
+  server: egnkl-g04.ar01-ae5.entry.v50307shvkaa.art
   port: 20027
   client-fingerprint: chrome
   type: ss
@@ -331,7 +331,7 @@ proxies:
   tfo: false
   udp: true
 - name: 🇷🇺 俄罗斯Z01
-  server: omfuy-g04.ru01-ae5.entry.v50307shvkaa.art
+  server: 9vgmp-g04.ru01-ae5.entry.v50307shvkaa.art
   port: 20032
   client-fingerprint: chrome
   type: ss
@@ -340,7 +340,7 @@ proxies:
   tfo: false
   udp: true
 - name: 🇹🇷 土耳其Z01
-  server: 9b4lc-g04.tr01-ae5.entry.v50307shvkaa.art
+  server: je0ob-g04.tr01-ae5.entry.v50307shvkaa.art
   port: 20037
   client-fingerprint: chrome
   type: ss
@@ -349,7 +349,7 @@ proxies:
   tfo: false
   udp: true
 - name: 🇰🇷 韩国Z01
-  server: b66io-g04.kr01-ae5.entry.v50307shvkaa.art
+  server: v7fhs-g04.kr01-ae5.entry.v50307shvkaa.art
   port: 20042
   client-fingerprint: chrome
   type: ss
@@ -358,7 +358,7 @@ proxies:
   tfo: false
   udp: true
 - name: 🇮🇳 印度Z01
-  server: u12sr-g04.in01-ae5.entry.v50307shvkaa.art
+  server: 41168-g04.in01-ae5.entry.v50307shvkaa.art
   port: 20047
   client-fingerprint: chrome
   type: ss
@@ -367,7 +367,7 @@ proxies:
   tfo: false
   udp: true
 - name: 🇩🇪 德国Z01
-  server: jn8z0-g04.de01-ae5.entry.v50307shvkaa.art
+  server: upedg-g04.de01-ae5.entry.v50307shvkaa.art
   port: 20052
   client-fingerprint: chrome
   type: ss
@@ -376,7 +376,7 @@ proxies:
   tfo: false
   udp: true
 - name: 🇨🇦 加拿大Z01
-  server: 1iahp-g04.ca01-ae5.entry.v50307shvkaa.art
+  server: avcqt-g04.ca01-ae5.entry.v50307shvkaa.art
   port: 20057
   client-fingerprint: chrome
   type: ss
@@ -385,7 +385,7 @@ proxies:
   tfo: false
   udp: true
 - name: 🇦🇺 澳大利亚Z01
-  server: ex6yd-g04.au01-ae5.entry.v50307shvkaa.art
+  server: n7urb-g04.au01-ae5.entry.v50307shvkaa.art
   port: 20062
   client-fingerprint: chrome
   type: ss
@@ -394,7 +394,7 @@ proxies:
   tfo: false
   udp: true
 - name: 🇫🇷 法国Z01
-  server: 0yr7y-g04.fr01-ae5.entry.v50307shvkaa.art
+  server: tebuc-g04.fr01-ae5.entry.v50307shvkaa.art
   port: 20067
   client-fingerprint: chrome
   type: ss
@@ -403,7 +403,7 @@ proxies:
   tfo: false
   udp: true
 - name: 🇺🇦 乌克兰Z01
-  server: 4ez2o-g04.ua01-ae5.entry.v50307shvkaa.art
+  server: 9fsi1-g04.ua01-ae5.entry.v50307shvkaa.art
   port: 20072
   client-fingerprint: chrome
   type: ss
@@ -887,7 +887,7 @@ rules:
 - DOMAIN-SUFFIX,baozimh.com,🎯 全球直连
 - DOMAIN-SUFFIX,colamanga.com,🎯 全球直连
 - DOMAIN-SUFFIX,18-comicstellar.art,🎯 全球直连
-- DOMAIN-SUFFIX,ykhm.com,🎯 全球直连
+- DOMAIN-SUFFIX,ykmh.com,🎯 全球直连
 - PROCESS-NAME,Spark,🎯 全球直连
 - PROCESS-NAME,Easydict,🎯 全球直连
 - PROCESS-NAME,StocksWidget,🚀 节点选择
